@@ -3,12 +3,15 @@ function noop() {}
 
 
 function showResult(number) {
+  const point = document.getElementById('result-one-id').innerText;
+  const reason = document.getElementById('reason-one-id').innerText;
   const tip = document.getElementById('button-one');
   const place = document.getElementById(number);
   const result = document.createElement('div')
   result.id = 'result-id';
   result.className= 'result';
-  result.innerHTML= 'This is the first tips innerHTML';
+  const bpoint = point.bold();
+  result.innerHTML= bpoint + ' ' + reason;
   place.appendChild(result);
   
   
@@ -28,12 +31,15 @@ function showResult(number) {
 
   
 function showResulttwo(number) {
+  const point = document.getElementById('result-two-id').innerText;
+  const reason = document.getElementById('reason-two-id').innerText;
   const tip = document.getElementById('button-two');
   const place = document.getElementById(number);
   const result = document.createElement('div')
   result.id = 'result-id-two';
   result.className= 'result';
-  result.innerHTML= 'This is the second tips innerHTML';
+  const bpoint = point.bold();
+  result.innerHTML= bpoint + ' ' + reason;
   place.appendChild(result);
   
   
@@ -52,12 +58,15 @@ function showResulttwo(number) {
 }
 
 function showResultthree(number) {
+  const point = document.getElementById('result-three-id').innerText;
+  const reason = document.getElementById('reason-three-id').innerText;
   const tip = document.getElementById('button-three');
   const place = document.getElementById(number);
   const result = document.createElement('div')
   result.id = 'result-id-three';
   result.className= 'result';
-  result.innerHTML= 'This is the third tips innerHTML';
+  const bpoint = point.bold();
+  result.innerHTML= bpoint + ' ' + reason;
   place.appendChild(result);
   
   
