@@ -1,0 +1,129 @@
+body{
+  font-family: Arial;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(90, 161, 253);
+}
+
+.logo{
+  width: fit-content;
+  height: fit-content;
+  font-weight: bold;
+  font-size: 34px;
+  margin-top: 30px;
+}
+
+.sportmind{
+  color: white;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.tipid{
+  margin-top: 120px;
+}
+
+.tip-header{
+  margin-left: 20px;
+  background-color: rgb(85, 85, 85);
+  color: white;
+  width: 610px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.tip, .tip-two, .tip-three{
+  margin-left: 20px;
+  background-color: rgb(243, 243, 243);
+  width: 620px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.team{
+  height: 75px;
+}
+
+.versus{
+  font-size: 30px;
+}
+
+.tip-button{
+  border-color: rgb(90, 161, 253);
+  color: rgb(90, 161, 253);
+  border-style: solid;
+  border-width: 1px;
+}
+
+.tip-button:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.tip-button:active{
+  background-color: rgb(90, 161, 253);
+  color: rgb(243, 243, 243);
+}
+
+.result{
+  background-color: rgb(200, 200, 241);
+  height: 130px;
+  width: 600px;
+  margin-left: 20px;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.close-button{
+  background-color: rgb(200, 200, 241);
+  border-color: rgb(90, 161, 253);
+  color: rgb(90, 161, 253);
+  border-style: solid;
+  border-width: 1px;
+  height: 20px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.close-button:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.close-button:active{
+  background-color: rgb(90, 161, 253);
+  color: rgb(200, 200, 241);
+}
+
