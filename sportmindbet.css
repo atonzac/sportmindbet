@@ -95,13 +95,10 @@ body{
 
 .versus{
   font-size: 16px;
-  margin-bottom: 15px;
-}
-
-.versus-live{
-  font-size: 20px;
-  margin-bottom: 22px;
-  color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .tip-button{
@@ -145,7 +142,7 @@ body{
   min-width: 250px;
   position: relative;
   top: 0;
-  padding: 20px;
+  padding-right: 20px;
 }
 
 .history-header{
