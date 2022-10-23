@@ -8,19 +8,6 @@
     <script src="sportmindbet.js"></script>
     <script src="livescore.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <div class="hide">
-      <p id="result-one-id" class="result-one">ΝΤΑΛΚΟΥΡΝΤ FF under 1.5 goal</p>
-      <p id="reason-one-id">Απόδοση 1.55 novibet</p>
-      <p id="result-two-id" class="result-two">ΛΑΤΣΙΟ under 1.5 goal</p>
-      <p id="reason-two-id">Απόδοση 1.39 novibet</p>
-      <p id="result-three-id" class="result-three">1/X & over 1.5</p>
-      <p id="reason-three-id">Απόδοση 1.73 novibet</p>
-      <p id="result-four-id" class="result-four">ΑΛΚΜΑΑΡ over 1.5 goal</p>
-      <p id="reason-four-id">Απόδοση 1.42 novibet</p>
-      <p id="result-five-id" class="result-five">ΓΚΟΡΝΙΚ ΖΑΜΠΖΕ under 1.5 goal</p>
-      <p id="reason-five-id">Απόδοση 1.48 novibet</p>
-    </div>
-    
   </head>
   <body>
     <div class="header">
@@ -29,77 +16,104 @@
       </div>
     </div>
     <div class="content">
-      <div class="content-tips">
-        <div class="category-header">
-          ΕΠΙΛΟΓΕΣ ΓΙΑ ΔΥΑΔΕΣ
+      <div class="all-tips">
+        <div class="all-tips-header">TIPS</div>
+        <div class="football">
+          <button class="football-header" onclick="closeFootball()">
+            ΠΟΔΟΣΦΑΙΡΟ
+          </button>
+          <div id="football-id" class="football-tips">
+            <div class="tipid">
+              <div class="tip-header">
+                23/10/2022 14:00 <img class="league-country" src="teams/Sweden.png"> ΣΟΥΠΕΡΕΤΑΝ
+              </div>
+              <div  class="tip">
+                <img class="team" src="teams/vasteras.png">
+                <p class="team-name">ΒΑΣΤΕΡΑΣ</p>
+                <p class="versus">4 - 1</p>
+                <p class="team-name">ΝΤΑΛΚΟΥΡΝΤ FF</p>
+                <img class="team" src="teams/dalkurd.png">
+                <button id="tip-button" class="tip-button" onclick="showResult('result-id')">TIP</button>
+              </div>
+            </div>
+            <div id="result-id" class="result">
+    
+            </div>
+            <div class="tipid">
+              <div class="tip-header">
+                23/10/2022 19:00 <img class="league-country" src="teams/Italy.png"> ΣΕΡΙΕ Α
+              </div>
+              <div  class="tip">
+                <img class="team" src="teams/Atalanta.png">
+                <p class="team-name">ΑΤΑΛΑΝΤΑ</p>
+                <p class="versus">0 - 2</p>
+                <p class="team-name">ΛΑΤΣΙΟ</p>
+                <img class="team" src="teams/Lazio.png">
+                <button id="tip-button" class="tip-button" onclick="showResult('result-id-two')">TIP</button>
+              </div>
+            </div>
+            <div id="result-id-two" class="result">
+    
+            </div>
+            <div  class="tipid">
+              <div class="tip-header">
+                23/10/2022 16:00 <img class="league-country" src="teams/Sweden.png"> ΣΟΥΠΕΡΕΤΑΝ
+              </div>
+              <div  class="tip">
+                <img class="team" src="teams/SKOVDE.png">
+                <p class="team-name">ΣΚΕΒΝΤΕ</p>
+                <p class="versus">1 - 1</p>
+                <p class="team-name">ΟΥΤΣΙΚΤΕΝΣ ΒΚ</p>
+                <img class="team" src="teams/Uciktens.png">
+                <button id="tip-button" class="tip-button" onclick="showResult('result-id-three')">TIP</button>
+              </div>
+            </div>
+            <div id="result-id-three" class="result">
+    
+            </div>
+            <div class="tipid">
+              <div class="tip-header">
+                23/10/2022 13:15 <img class="league-country" src="teams/Netherlands.png"> ΕΡΕΝΤΙΒΙΖΙΕ
+              </div>
+              <div  class="tip">
+                <img class="team" src="teams/Excelsior.png">
+                <p class="team-name">ΕΞΕΛΣΙΟΡ</p>
+                <p class="versus">2 - 1</p>
+                <p class="team-name">ΑΛΚΜΑΑΡ</p>
+                <img class="team" src="teams/AZ.png">
+                <button id="tip-button" class="tip-button" onclick="showResult('result-id-four')">TIP</button>
+              </div>
+            </div>
+            <div id="result-id-four" class="result">
+    
+            </div>
+            <div class="tipid">
+              <div class="tip-header">
+                23/10/2022 13:30 <img class="league-country" src="teams/Poland.png"> ΕΞΤΡΑΚΛΑΖΑ
+              </div>
+              <div  class="tip">
+                <img class="team" src="teams/WartaPoznan.png">
+                <p class="team-name">ΒΑΡΤΑ Π.</p>
+                <p class="versus">0 - 0</p>
+                <p class="team-name">ΓΚ. ΖΑΜΠΖΕ</p>
+                <img class="team" src="teams/GornikZabrze.png">
+                <button id="tip-button" class="tip-button" onclick="showResult('result-id-five')">TIP</button>
+              </div>
+            </div>
+            <div id="result-id-five" class="result">
+    
+            </div>
+          </div>
         </div>
-        <div id="tip-id-four" class="tipid-four">
-          <div class="tip-header">
-            23/10/2022 13:15 <img class="league-country" src="teams/Netherlands.png"> ΕΡΕΝΤΙΒΙΖΙΕ
+        <div class="basket">
+          <button class="basket-header" onclick="closeBasket()">ΜΠΑΣΚΕΤ</button>
+          <div id="basket-id" class="basket-tips">
+            
           </div>
-          <div  class="tip-four">
-            <img class="team" src="teams/Excelsior.png">
-            <p class="team-name">ΕΞΕΛΣΙΟΡ</p>
-            <p class="versus">2 - 1</p>
-            <p class="team-name">ΑΛΚΜΑΑΡ</p>
-            <img class="team" src="teams/AZ.png">
-            <button id="button-four" class="tip-button" onclick="showResultfour('tip-id-four')">TIP</button>
-          </div>
+         
         </div>
-        <div id="tip-id-five" class="tipid-five">
-          <div class="tip-header">
-            23/10/2022 13:30 <img class="league-country" src="teams/Poland.png"> ΕΞΤΡΑΚΛΑΖΑ
-          </div>
-          <div  class="tip-five">
-            <img class="team" src="teams/WartaPoznan.png">
-            <p class="team-name">ΒΑΡΤΑ Π.</p>
-            <p class="versus">0 - 0</p>
-            <p class="team-name">ΓΚ. ΖΑΜΠΖΕ</p>
-            <img class="team" src="teams/GornikZabrze.png">
-            <button id="button-five" class="tip-button" onclick="showResultfive('tip-id-five')">TIP</button>
-          </div>
-        </div>
-          <div id="tip-id" class="tipid">
-          <div class="tip-header">
-            23/10/2022 14:00 <img class="league-country" src="teams/Sweden.png"> ΣΟΥΠΕΡΕΤΑΝ
-          </div>
-          <div  class="tip">
-            <img class="team" src="teams/vasteras.png">
-            <p class="team-name">ΒΑΣΤΕΡΑΣ</p>
-            <p class="versus">4 - 1</p>
-            <p class="team-name">ΝΤΑΛΚΟΥΡΝΤ FF</p>
-            <img class="team" src="teams/dalkurd.png">
-            <button id="button-one" class="tip-button" onclick="showResult('tip-id')">TIP</button>
-          </div>
-        </div>
-        <div id="tip-id-three" class="tipid-three">
-          <div class="tip-header">
-            23/10/2022 16:00 <img class="league-country" src="teams/Sweden.png"> ΣΟΥΠΕΡΕΤΑΝ
-          </div>
-          <div  class="tip-three">
-            <img class="team" src="teams/SKOVDE.png">
-            <p class="team-name">ΣΚΕΒΝΤΕ</p>
-            <p class="versus">1 - 1</p>
-            <p class="team-name">ΟΥΤΣΙΚΤΕΝΣ ΒΚ</p>
-            <img class="team" src="teams/Uciktens.png">
-            <button id="button-three" class="tip-button" onclick="showResultthree('tip-id-three')">TIP</button>
-          </div>
-        </div>
-        <div id="tip-id-two" class="tipid-two">
-          <div class="tip-header">
-            23/10/2022 19:00 <img class="league-country" src="teams/Italy.png"> ΣΕΡΙΕ Α
-          </div>
-          <div  class="tip-two">
-            <img class="team" src="teams/Atalanta.png">
-            <p class="team-name">ΑΤΑΛΑΝΤΑ</p>
-            <p class="versus">0 - 2</p>
-            <p class="team-name">ΛΑΤΣΙΟ</p>
-            <img class="team" src="teams/Lazio.png">
-            <button id="button-two" class="tip-button" onclick="showResulttwo('tip-id-two')">TIP</button>
-          </div>
-        </div>
-        
       </div>
+      
       <div class="history">
         <div class="history-header">
           ΙΣΤΟΡΙΚΟ
@@ -109,6 +123,9 @@
             <div class="date-box">
               <a class="date" href="221022.html">22/10/2022</a>
             </div>
+            <div class="date-box">
+              <a class="date" href="">24/10/2022</a>
+            </div>
           </div>
           <div class="right-dates">
             <div class="date-box">
@@ -116,6 +133,8 @@
             </div>
           </div>
         </div>
-    </body>
+      </div>
+    </div> 
+  </body>
 </html>
 
