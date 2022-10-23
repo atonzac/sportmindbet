@@ -122,3 +122,5 @@ function showResultfive(number) {
   }
   tip.onclick= closeResultfive;
 }
+
+

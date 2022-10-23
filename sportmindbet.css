@@ -2,6 +2,7 @@ body{
   font-family: Arial;
   display: flex;
   flex-direction: column;
+  height: fit-content;
 }
 
 .header{
@@ -34,15 +35,17 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: fixed;
+  position: relative;
   top: 120px;
-  right: 20px;
-  left: 20px;
 }
 
 .content-tips{
   display: flex;
   flex-direction: column;
+  width: 35%;
+  min-width: 340px;
+  max-width: 620px;
+  padding-left: 20px;
 }
 
 .category-header{
@@ -74,23 +77,31 @@ body{
 
 .tip, .tip-two, .tip-three, .tip-four, .tip-five{
   background-color: rgb(243, 243, 243);
-  width: 620px;
   height: 100px;
-  position: relative;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
+.team-name{
+  font-size: 13px;
+}
 
 .team{
-  height: 75px;
+  height: 50px;
 }
 
 .versus{
-  font-size: 30px;
-  margin-bottom: 37px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.versus-live{
+  font-size: 20px;
+  margin-bottom: 22px;
+  color: red;
 }
 
 .tip-button{
@@ -113,7 +124,6 @@ body{
 .result{
   background-color: rgb(200, 200, 241);
   height: 130px;
-  width: 600px;
   position: relative;
   padding-top: 20px;
   padding-left: 20px;
@@ -131,9 +141,11 @@ body{
 .history{
   display: flex;
   flex-direction: column;
-  width: 620px;
+  width: 25%;
+  min-width: 250px;
   position: relative;
   top: 0;
+  padding: 20px;
 }
 
 .history-header{
@@ -158,6 +170,10 @@ body{
   width: 50%;
   display: flex;
   flex-direction: column;
+}
+
+.date{
+  color: white;
 }
 
 .date-box{
