@@ -81,3 +81,28 @@ function showResultthree(number) {
   }
   tip.onclick= closeResultthree;
 }
+
+function showResultfour(number) {
+  const point = document.getElementById('result-four-id').innerText;
+  const reason = document.getElementById('reason-four-id').innerText;
+  const tip = document.getElementById('button-four');
+  const place = document.getElementById(number);
+  const result = document.createElement('div')
+  result.id = 'result-id-four';
+  result.className= 'result';
+  const bpoint = point.bold();
+  result.innerHTML= bpoint + ' ' + reason;
+  place.appendChild(result);
+  
+  
+
+  function closeResultfour() {
+    var x = document.getElementById('result-id-four');
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  tip.onclick= closeResultfour;
+}
