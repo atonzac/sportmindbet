@@ -1,7 +1,3 @@
-function noop() {}
-
-
-
 function showResult(number) {
   const point = document.getElementById('result-one-id').innerText;
   const reason = document.getElementById('reason-one-id').innerText;
@@ -27,9 +23,6 @@ function showResult(number) {
   tip.onclick= closeResult;
 }
   
-
-
-  
 function showResulttwo(number) {
   const point = document.getElementById('result-two-id').innerText;
   const reason = document.getElementById('reason-two-id').innerText;
@@ -53,8 +46,6 @@ function showResulttwo(number) {
     }
   }
   tip.onclick= closeResulttwo;
-
-  
 }
 
 function showResultthree(number) {
@@ -105,4 +96,29 @@ function showResultfour(number) {
     }
   }
   tip.onclick= closeResultfour;
+}
+
+function showResultfive(number) {
+  const point = document.getElementById('result-five-id').innerText;
+  const reason = document.getElementById('reason-five-id').innerText;
+  const tip = document.getElementById('button-five');
+  const place = document.getElementById(number);
+  const result = document.createElement('div')
+  result.id = 'result-id-five';
+  result.className= 'result';
+  const bpoint = point.bold();
+  result.innerHTML= bpoint + ' ' + reason;
+  place.appendChild(result);
+  
+  
+
+  function closeResultfive() {
+    var x = document.getElementById('result-id-five');
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  tip.onclick= closeResultfive;
 }

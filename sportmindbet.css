@@ -1,6 +1,5 @@
 body{
   font-family: Arial;
-  height: 1000px;
   display: flex;
   flex-direction: column;
 }
@@ -31,12 +30,24 @@ body{
   color: white;
 }
 
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 120px;
+  right: 20px;
+  left: 20px;
+}
+
+.content-tips{
+  display: flex;
+  flex-direction: column;
+}
+
 .category-header{
-  margin-top: 120px;
-  margin-left: 20px;
   background-color: black;
   color: white;
-  width: 620px;
   height: 45px;
   display: flex;
   flex-direction: row;
@@ -45,10 +56,8 @@ body{
 }
 
 .tip-header{
-  margin-left: 20px;
   background-color: rgb(85, 85, 85);
   color: white;
-  width: 610px;
   height: 30px;
   display: flex;
   flex-direction: row;
@@ -63,8 +72,7 @@ body{
   margin-right: 10px;
 }
 
-.tip, .tip-two, .tip-three, .tip-four{
-  margin-left: 20px;
+.tip, .tip-two, .tip-three, .tip-four, .tip-five{
   background-color: rgb(243, 243, 243);
   width: 620px;
   height: 100px;
@@ -82,6 +90,7 @@ body{
 
 .versus{
   font-size: 30px;
+  margin-bottom: 37px;
 }
 
 .tip-button{
@@ -105,7 +114,6 @@ body{
   background-color: rgb(200, 200, 241);
   height: 130px;
   width: 600px;
-  margin-left: 20px;
   position: relative;
   padding-top: 20px;
   padding-left: 20px;
@@ -119,3 +127,55 @@ body{
 .hide{
   display: none;
 }
+
+.history{
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+  position: relative;
+  top: 0;
+}
+
+.history-header{
+  background-color: black;
+  color: white;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dates{
+  background-color: rgb(85, 85, 85);
+  color: white;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-dates, .right-dates{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.date-box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+}
+
+.date:hover{
+  cursor: pointer;
+  color: lightblue;
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.date:active{
+  opacity: 0.4;
+}
+
+
