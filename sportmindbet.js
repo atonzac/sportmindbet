@@ -16,13 +16,21 @@ function closeFootball() {
   }
 }
 
-  function closeBasket() {
-    var x = document.getElementById('basket-id');
-    if (window.getComputedStyle(x).display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
+function closeBasket() {
+  var x = document.getElementById('basket-id');
+  if (window.getComputedStyle(x).display === "none") {
+    x.style.display = "block";
+  } else {
+     x.style.display = "none";
   }
+}
  
+function closeHistory() {
+  var x = document.getElementById('history-id');
+  if (window.getComputedStyle(x).display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 

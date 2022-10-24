@@ -9,7 +9,7 @@ body{
   z-index: 100;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,6 +29,26 @@ body{
 
 .sportmind{
   color: white;
+}
+
+.png-link{
+  position: fixed;
+  top: 45px;
+  right: 45px;
+  border: none;
+  color: white;
+  height: 25px;
+  text-decoration: none;
+}
+
+.png-link:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.png-link:active{
+  background-color: rgb(90, 161, 253);
+  color: blue;
 }
 
 .content{
@@ -70,8 +90,12 @@ body{
   height: 45px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+}
+
+.football-icon{
+  height: 30px;
 }
 
 .football-tips{
@@ -90,8 +114,13 @@ body{
   height: 45px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+}
+
+.basket-icon{
+  height: 20px;
+  margin-right: 5px;
 }
 
 .basket-tips{
@@ -171,23 +200,28 @@ body{
 }
 
 .history{
+  margin-top: 1px;
   display: flex;
   flex-direction: column;
-  width: 25%;
-  min-width: 250px;
-  position: relative;
-  top: 0;
-  padding-right: 20px;
 }
 
 .history-header{
   background-color: black;
   color: white;
-  height: 50px;
+  height: 45px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+}
+
+.calendar-icon{
+  height: 24px;
+  margin-right: 5px;
+}
+
+.all-dates{
+  display: none;
 }
 
 .dates{

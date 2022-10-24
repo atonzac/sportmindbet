@@ -2,11 +2,11 @@
 <html>
   <head>
     <title>
-      Sportmind Bet
+       Sportmind Bet
     </title>
+    <link rel = "icon" href ="icons/sportmind-logo.png" type = "image/x-icon">
     <link rel="stylesheet" href="sportmindbet.css">
     <script src="sportmindbet.js"></script>
-    <script src="livescore.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -14,12 +14,15 @@
       <div class="logo">
         <span class="sportmind">SPORTMIND</span><span class=bet>BET</span>
       </div>
+      <a class="png-link" href="https://pngtree.com/?sce=af&id=12917" target=”_blank”>pngtree.com</a>
+      
     </div>
     <div class="content">
       <div class="all-tips">
         <div class="all-tips-header">TIPS</div>
         <div class="football">
           <button class="football-header" onclick="closeFootball()">
+            <img class="football-icon" src="icons/football-icon.png">
             ΠΟΔΟΣΦΑΙΡΟ
           </button>
           <div id="football-id" class="football-tips">
@@ -46,7 +49,7 @@
               <div  class="tip">
                 <img class="team" src="teams/Sassuolo.png">
                 <p class="team-name">ΣΑΣΣΟΥΟΛΟ</p>
-                <p class="versus"> - </p>
+                <p class="versus">2 - 1</p>
                 <p class="team-name">ΒΕΡΟΝΑ</p>
                 <img class="team" src="teams/Verona.png">
                 <button id="tip-button" class="tip-button" onclick="showResult('result-id-two')">TIP</button>
@@ -59,34 +62,56 @@
           </div>
         </div>
         <div class="basket">
-          <button class="basket-header" onclick="closeBasket()">ΜΠΑΣΚΕΤ</button>
+          <button class="basket-header" onclick="closeBasket()">
+            <img class="basket-icon" src="icons/basket-icon.png">
+            ΜΠΑΣΚΕΤ
+          </button>
           <div id="basket-id" class="basket-tips">
-            
+            <div class="tipid">
+              <div class="tip-header">
+                25/10/2022 03:00 <img class="league-country" src="teams/USA.png"> NBA
+              </div>
+              <div  class="tip">
+                <img class="team" src="teams/Grizzlies.png">
+                <p class="team-name">MEM ΓΚΡΙΖΛΙΣ</p>
+                <p class="versus"> - </p>
+                <p class="team-name">ΒΚΝ ΝΕΤΣ</p>
+                <img class="team" src="teams/BknNets.png">
+                <button id="tip-button" class="tip-button" onclick="showResult('result-id-basket')">TIP</button>
+              </div>
+            </div>
+            <div id="result-id-basket" class="result">
+              <span class="point">Over 233.5 πόντοι</span> Απόδοση 1.91 novibet
+            </div>
           </div>
          
         </div>
+        <div class="history">
+          <button class="history-header" onclick="closeHistory('history-id')">
+            <img class="calendar-icon" src="icons/calendar.png">
+            ΙΣΤΟΡΙΚΟ
+          </button>
+          <div id="history-id" class="all-dates">
+            <div class="dates">
+              <div class="left-dates">
+                <div class="date-box">
+                  <a class="date" href="221022.html">22/10/2022</a>
+                </div>
+                <div class="date-box">
+                  <a class="date" href="241022.html">24/10/2022</a>
+                </div>
+              </div>
+              <div class="right-dates">
+                <div class="date-box">
+                  <a class="date" href="231022.html">23/10/2022</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       
-      <div class="history">
-        <div class="history-header">
-          ΙΣΤΟΡΙΚΟ
-        </div>
-        <div class="dates">
-          <div class="left-dates">
-            <div class="date-box">
-              <a class="date" href="221022.html">22/10/2022</a>
-            </div>
-            <div class="date-box">
-              <a class="date" href="">24/10/2022</a>
-            </div>
-          </div>
-          <div class="right-dates">
-            <div class="date-box">
-              <a class="date" href="231022.html">23/10/2022</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </div> 
   </body>
 </html>
