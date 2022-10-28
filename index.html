@@ -20,6 +20,31 @@
     <div class="content">
       <div class="all-tips">
         <div class="all-tips-header">TIPS</div>
+        <div class="chl-special">
+          <button class="chl-header" onclick="closeChl()">
+            <img class="chl-icon" src="icons/chl-icon.png">
+            CHAMPIONS LEAGUE
+          </button>
+          <div id="chl-id" class="chl-content">
+            <div class="chl-home-team">
+              <p class="chl-team-name">BVB DORTMUND</p>
+              <img class="chl-team" src="teams/Dortmund.png">
+            </div>
+            <div class="chl-center">
+            <div class="chl-date">25.10.2021 - 22:00</div>
+            <div class="chl-score">
+            <div class="chl-home">0</div>
+            <div class="chl-versus">-</div>
+            <div class="chl-away">0</div>
+            </div>
+            <div class="chl-tip"></div>
+            </div>
+            <div class="chl-home-team">
+              <p class="chl-team-name">MANCHESTER CITY</p>
+              <img class="chl-team" src="teams/Manchester-city.png">
+            </div>
+          </div>
+        </div>
         <div class="football">
           <button class="football-header" onclick="closeFootball()">
             <img class="football-icon" src="icons/football-icon.png">
@@ -33,7 +58,7 @@
               <div  class="tip">
                 <img class="team" src="teams/AkritasXloraka.png">
                 <p class="team-name">ΑΚΡΙΤΑΣ ΧΛΩΡΑΚΑΣ</p>
-                <p class="versus"> - </p>
+                <p class="versus">0 - 3</p>
                 <p class="team-name">ΑΕ ΛΕΜΕΣΟΥ</p>
                 <img class="team" src="teams/AELemesou.png">
                 <button id="tip-button" class="tip-button" onclick="showResult('result-id')">TIP</button>
@@ -49,7 +74,7 @@
               <div  class="tip">
                 <img class="team" src="teams/MietzLegnitsa.png">
                 <p class="team-name">ΜΙΕΤΖ ΛΕΓΚΝΙΤΣΑ</p>
-                <p class="versus">2 - 1</p>
+                <p class="versus">2 - 4</p>
                 <p class="team-name">ΠΟΓΚΟΝ ΣΤΣΖΕΤΣΙΝ</p>
                 <img class="team" src="teams/Stsezin.png">
                 <button id="tip-button" class="tip-button" onclick="showResult('result-id-two')">TIP</button>
@@ -57,9 +82,7 @@
             </div>
             <div id="result-id-two" class="result">
               <span class="point">X/2 Under 4.5</span> Απόδοση 1.45 novibet
-            </div>
-            
-            
+            </div>            
           </div>
         </div>
         <div class="basket">
@@ -118,6 +141,9 @@
                 <div class="date-box">
                   <a class="date" href="241022.html">24/10/2022</a>
                 </div>
+                <div class="date-box">
+                  <a class="date" href="281022.html">28/10/2022</a>
+                </div>
               </div>
               <div class="right-dates">
                 <div class="date-box">
@@ -131,31 +157,7 @@
           </div>
         </div>
       </div>
-      <div class="chl-special">
-        <button class="chl-header" onclick="closeChl()">
-          <img class="chl-icon" src="icons/chl-icon.png">
-          CHAMPIONS LEAGUE
-        </button>
-        <div id="chl-id" class="chl-content">
-          <div class="chl-home-team">
-            <p class="chl-team-name">BVB DORTMUND</p>
-            <img class="chl-team" src="teams/Dortmund.png">
-          </div>
-          <div class="chl-center">
-          <div class="chl-date">25.10.2021 - 22:00</div>
-          <div class="chl-score">
-          <div class="chl-home">0</div>
-          <div class="chl-versus">-</div>
-          <div class="chl-away">0</div>
-          </div>
-          <div class="chl-tip"></div>
-          </div>
-          <div class="chl-home-team">
-            <p class="chl-team-name">MANCHESTER CITY</p>
-            <img class="chl-team" src="teams/Manchester-city.png">
-          </div>
-        </div>
-      </div>
+      
     </div> 
   </body>
 </html>
