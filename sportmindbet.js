@@ -34,3 +34,11 @@ function closeHistory() {
   }
 }
 
+function closeChl() {
+  var x = document.getElementById('chl-id');
+  if (window.getComputedStyle(x).display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}

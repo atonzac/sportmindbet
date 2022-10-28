@@ -65,7 +65,17 @@ body{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   padding-left: 10px;
+  padding-right: 10px;
+}
+
+.won{
+  color: rgb(13, 185, 13);
+}
+
+.lost{
+  color: rgb(218, 15, 15);
 }
 
 .league-country{
@@ -93,11 +103,6 @@ body{
   width: 50%;
 }
 
-.proof-img{
-  height: 90px;
-  width: 320px;
-}
-
 .team{
   height: 35px;
 }
@@ -109,6 +114,10 @@ body{
 .versus{
   font-size: 15px;
   margin-bottom: 17px;
+}
+
+.played{
+  color: royalblue;
 }
 
 .football-icon{
